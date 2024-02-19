@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Composition</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+        }
+        .container{
+            background-color: #000;
+            height: 800px;
+            width: 800px;
+            display: grid;
+            grid-template-columns: 200px 500px 100px;
+            grid-template-rows: 300px 300px 100px 100px;
+            /* gap: 1px; */
+        }
+        .item{
+            background-color: white;
+            border: 10px solid black;
+        }
+        .div1,.div2{
+            border-top: none;
+        }
+        .div1{
+            border-bottom: 30px solid black;
+        }
+        .div1,.div3,.div4{
+            border-left: none;
+            
+        }
+        .div4,.div5,.div7{
+            border-bottom: none;
+        }
+        .div2,.div6,.div7{
+            border-right: none;
+        }
+        .div2{
+            grid-column: span 2;
+            grid-row: span 2;
+            background-color: #ff5349;
+        }
+     
+        .div4{
+            background-color: #4169e1;
+            grid-row: span 2;
+        }
+        .div5{
+            grid-row: span 2;
+            border-right: 12px solid black;
+        }
+        .div6{
+            grid-area: 3/3/4/4;
+        }
+        .div7{
+            grid-area: 4/3/5/4;
+            background-color: rgb(247, 247, 27);
+            border-top: 17px solid black;
+        }
+        .div1,.div3,.div5,.div6{
+            background-color:  #F2F3F5;
+        }
+    </style>
+</head>
+<body>
+    <h1><b><u>MONDRIAN COMPOSITION PROJECT</u></b></h1>
+    <div class="container">
+        <div class="item div1"></div>
+        <div class="item div2"></div>
+        <div class="item div3"></div>
+        <div class="item div4"></div>
+        <div class="item div5"></div>
+        <div class="item div6"></div>
+        <div class="item div7"></div>
+    </div>
+    <footer><u><i>MADE BY @AOUNJAFRI</i> </u></footer>
+</body>
+</html>
